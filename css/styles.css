@@ -1,0 +1,77 @@
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/img/countdown-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.countdown-wrapper {
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+  width: 90%;
+}
+
+.title {
+  text-align: center;
+}
+
+.title .head-text {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  /* margin-bottom: 1rem; */
+}
+
+.title .sub-text {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-top: 0;
+}
+
+.timer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.timer-wrapper > div {
+  padding: 0 1.4rem;
+  text-align: center;
+}
+
+.fig-text {
+  color: rgb(170 181 128);
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 1px 5px 1px rgb(188 233 218);
+}
+
+@media (max-width: 620px) {
+  .title .head-text {
+    font-size: 2.5rem;
+  }
+
+  .timer-wrapper > div {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .fig-text {
+    font-size: 4rem;
+  }
+}
